@@ -1,0 +1,31 @@
+p {
+    color: blue;
+}
+   
+header h1 {
+    color: cadetblue;
+}
+
+main p {
+    color: red
+}
+
+#maintitle {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.purple {
+    color: purple;
+}
+
+.black {
+    color: black;
+}
+
+.brown {
+    color: brown;
+}
