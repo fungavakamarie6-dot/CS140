@@ -1,0 +1,43 @@
+/* Shared Body Defaults for Interest and Hero Pages */
+body {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #2d3748;         /* Main readable body text */
+    background-color: #fdfbf7;  /* Warm cream background color */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ID Selector */
+#main-title {
+    color: #9f1239;
+    border-bottom: 3px solid #f43f5e;
+    padding-bottom: 8px;
+}
+
+.highlight {
+    color: #e11d48;
+}
+
+.emphasis {
+    color: #be123c;
+    font-weight: bold;
+    background-color: #ffe4e6;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Class Selectors for Color Write-Up */
+.emphasize-text {
+    color: #e11d48;
+    font-weight: bold;
+}
+
+.deephasize-text {
+    color: #9ca3af;
+    font-style: italic;
+}
+
+a {
+    color: #0284c7;
+}
