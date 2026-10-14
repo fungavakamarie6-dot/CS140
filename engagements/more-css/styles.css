@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 1rem;
+}
+
+/* Red outlines to see block vs inline */
+p, div, ul, figure, h1, h2, h3 {
+  outline: 1px solid red;
+}
+
+span {
+  background: yellow;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+/* Box model */
+.box {
+  padding: 10px 40px;          /* top/bottom 10px, left/right 40px */
+  border-bottom: 5px solid blue; /* only bottom border */
+  margin: 10px 20px 30px 40px; /* top right bottom left */
+  background: #eef;
+}
+
+/* Units other than px */
+.units {
+  width: 80%;
+  font-size: 1.5em;
+  margin-left: 5vw;
+  padding: 1rem;
+}
