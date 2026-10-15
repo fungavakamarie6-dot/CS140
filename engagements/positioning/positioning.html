@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+</head>
+<body>
+    <header>
+        <h1>Marie's Web Design Site</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <h1>Positioning</h1>
+        <figure id="floatingfig" class="templefig"></figure>
+        <img src="temple.jpg" alt="Laie Hawaii Temple">
+        <figcaption>Laie Hawaii Temple</figcaption>
+    </figure>
+    <p>Lorem ipsum dolor sit, amet consecteture adipiscing elit.</p>
+
+    <figure id="absolute" class="templefig">
+        <img src="temple.jpg" slt="Laie Hawaii Temple">
+        <figcaption>Laie Hawaii Temple</figcaption>
+    </figure>
+    <div class="enforcer"></div>
+
+    <h2>Questions</h2>
+  <ol>
+    <li>
+      <strong>What is normal flow in HTML?</strong><br>
+      Normal flow is the default layout. Block boxes (like paragraphs and headings) stack from top to bottom, and inline content (like text and links) runs left to right inside them.
+    </li>
+    <li>
+      <strong>What does float do? Why do you need to clear the float?</strong><br>
+      Float takes a box out of normal flow and pushes it to the left or right so text wraps around it. Boxes after it move up beside it, so you use <code>clear</code> to make a box (like a heading) start below the float instead.
+    </li>
+    <li>
+      <strong>What do absolute, fixed, and relative do?</strong><br>
+      <code>relative</code> moves a box from where it normally sits, but its original space stays reserved. <code>absolute</code> removes the box from normal flow and places it using top/right/bottom/left relative to the page (or its nearest positioned parent); it scrolls with the page. <code>fixed</code> also removes the box from flow but places it relative to the screen, so it stays in place while you scroll.
+    </li>
+    <li>
+      <strong>How can you make nice navigation buttons for mobile devices?</strong><br>
+      Use <code>display: block</code> on the links so each one is a full-width box, then add padding, a large font size, and a background color so the whole button is easy to tap.
+    </li>
+    <li>
+      <strong>Where can you find videos to review what we talked about in class?</strong><br>
+      [Fill in with where your instructor posts them, such as the course page or Canvas.]
+    </li>
+  </ol>
+
+  <footer><p>&copy; 2026 Marie Fungavaka</p></footer>
+
+    </main> 
+</body>
+</html>

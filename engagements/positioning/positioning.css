@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.templefig {
+    border: 2px solid balck;
+    width: 250px;
+    overflow: hidden;
+    float: left;
+}
+
+#floating {
+    float: right;
+}
+
+.templefig img {
+    width: 100%;
+}
+
+.enforcer {
+    clear: both;
+}
+
+#relative {
+    position: relative;
+    top: -10px
+    left: 40px;
+}
+
+#absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#fixed {
+    position: fixed;
+    top: 0;
+    right: 150;
+}
