@@ -7,6 +7,18 @@ body {
     padding: 5px;
 }
 
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    display: block;
+    padding: 5px 10 px;
+    background-color: rgb(98, 148, 130);
+    color: white;
+    /*border-bottom: thin solid white;*/
+}
 .parent {
     display: flex;
     flex-wrap: wrap;
