@@ -1,0 +1,63 @@
+header {
+    background-color: rgb(210, 210, 244)
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(210, 210, 244);
+    justify-content: space-round;
+}
+
+nav a {
+    display: block;
+    padding: 5px 20px;
+    background-color: rgb(29, 29, 34);
+    color: white;
+}
+
+.mainrow {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+main {
+    width: 75%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    margin: 0
+}
+
+.card a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(210, 210, 244);
+    width: 60%;
+    margin-bottom: 0 auto 5px auto;
+    border-radius: 5px;
+    color: aliceblue;
+}
