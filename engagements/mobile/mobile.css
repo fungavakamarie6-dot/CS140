@@ -57,7 +57,51 @@ main {
     padding: 10px;
     background-color: rgb(210, 210, 244);
     width: 60%;
-    margin-bottom: 0 auto 5px auto;
+    margin: 0 auto 5px auto;
     border-radius: 5px;
     color: aliceblue;
+}
+
+/* Phone layout. Change 700px to the width where YOUR page breaks */
+@media (max-width: 700px) {
+
+  /* stack sidebar and main */
+  .mainrow {
+    flex-direction: column;
+  }
+
+  /* main content first, sidebar below */
+  main {
+    width: 100%;
+    order: 1;
+  }
+  .sidebar {
+    width: 100%;
+    order: 2;
+  }
+
+  /* cards in one column */
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* nav buttons stack and are easy to tap */
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  nav a {
+    padding: 14px 20px;
+    font-size: 18px;
+    text-align: center;
+  }
 }
