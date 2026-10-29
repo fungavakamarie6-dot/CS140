@@ -64,24 +64,24 @@
         <h2>Questions</h2>
 
         <h3>Why do we need a viewport meta tag?</h3>
-        <p>Write your answer here.</p>
+        <p>Without the viewport tag, phones act like they have a wide desktop screen and shrink the whole page down to fit, so the text ends up tiny. My media query also wouldn't work, because the phone thinks it is wide. The viewport tag tells the phone to use its real screen width, so the mobile layout works.</p>
 
         <h3>If one rule says flex-direction: column and another says row on the same tag, which takes priority?</h3>
-        <p>Write your answer here.</p>
+        <p>The rule that comes later in the CSS file wins, as long as both rules are equally specific. That's why my media query has to go at the bottom. When I moved it to the top, my regular rules came after it and overrode it, and DevTools showed the media query rule crossed out.</p>
 
         <h3>How do you change the CSS for a web page displayed on a phone?</h3>
-        <p>Write your answer here.</p>
+        <p>You use a media query. I wrote @media (max-width: 700px) and put my phone styles inside it. Those styles only apply when the screen is that width or smaller, so the desktop layout stays the same on a computer.</p>
 
-        <h3>Pick a website you use on your phone. Name two things it changes on mobile.</h3>
-        <p>Write your answer here.</p>
+        <h3>Pick a website you use on your phone. Name two things it changes on mobile compared to desktop.</h3>
+        <p>On Instagram, the left sidebar menu turns into a row of icons at the bottom of the screen on my phone. The posts also fill the whole screen width instead of sitting in the middle with empty space on the sides.</p>
 
         <h3>What width did you choose for your breakpoint, and why?</h3>
-        <p>Write your answer here.</p>
+        <p>I chose 700px. When I dragged the page narrower in DevTools, the layout started to break around that width. The sidebar got squished, the cards got too thin, and the nav buttons stopped fitting. I picked the width where my content broke, not a specific phone.</p>
       </section>
     </main>
   </div>
   <footer>
-    <p>&copy; 2026 Marie Fungavaka</p>
+    <p>&copy; 2026 Chris Slade</p>
   </footer>
 </body>
 </html>
