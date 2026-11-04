@@ -1,0 +1,128 @@
+/* ---------- Page + centered wrapper ---------- */
+body {
+  font-family: Georgia, "Times New Roman", serif;   /* font family #1 */
+  background-color: #f3ece0;
+  margin: 0;
+  padding: 20px 0;
+}
+
+#wrapper {
+  width: 860px;
+  margin: 0 auto;              /* auto margins center the wrapper */
+  background-color: #ffffff;
+  border: 3px solid #5a3d2b;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+/* ---------- Header with background image ---------- */
+header {
+  height: 180px;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("header.jpg");
+  background-size: cover;
+  background-origin: border-box;
+  background-clip: padding-box;
+  background-position: center;
+}
+
+header h1 {
+  font-family: Verdana, Geneva, sans-serif;          /* font family #2 */
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px #000000;
+  margin: 0 0 10px 0;
+}
+
+.tagline {
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 0;
+}
+
+/* ---------- Navigation + hover ---------- */
+nav {
+  background-color: #5a3d2b;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 14px 24px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background-color: #e0a030;
+  color: #3a2415;
+}
+
+/* ---------- Main content ---------- */
+main {
+  padding: 25px 30px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+figure {
+  float: right;
+  width: 280px;
+  margin: 0 0 15px 25px;
+  padding: 10px;
+  border: 2px solid #5a3d2b;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #f3ece0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  clear: both;
+  background-color: #5a3d2b;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
