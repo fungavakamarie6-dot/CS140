@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Marie's Web Design</h1>
+    </header>
+    <main>
+        <form action="formprocessing.html" method="get">
+            <div class="form-row">
+            <input id="personname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+             <div class="form-row">
+             <input id="email" type="text" name="email" placeholder="Email">
+             </div>
+              <div class="form-row">
+             <input id="password" type="password" name="pass" placeholder="Password">
+             </div>
+              <div class="form-row">
+            <input type="submit" value="Sign Up">
+             </div>
+             
+             <div class="form-row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank">------</option>
+                    <option value="CA">Carlifornia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                    <option value="Tonga">Tonga</option>
+                </select>
+             </div>
+
+        </form>
+
+         <section>
+    <h2>Questions</h2>
+ 
+    <h3>1. What does the form's "action" attribute do?</h3>
+    <p>It sets where the form data gets sent when you submit a script or URL. If left out, it sends to the same page.</p>
+ 
+    <h3>2. What does the form's "method" attribute do?</h3>
+    <p>It sets how the data is sent, either GET or POST.</p>
+ 
+    <h3>3. What is the difference between POST and GET?</h3>
+    <p>Get puts the data in the URL, so it's visible and good for searches. While POST hides the data in the request body, so it's better for passwords and sensitive info.</p>
+ 
+    <h3>4. How do you pre-fill a control, and how is that different from a placeholder?</h3>
+    <p>You pre fill with the value attribute. That text is really in the field and gets submitted. A placeholder is just a light gray hint that disappears when you type and is never submitted.</p>
+ 
+    <h3>5. Which form controls did HTML5 add, and which did you use?</h3>
+    <p>HTML5 added input types like email, url, tel, number, range, date, time, color, and search, plus <dadtalist> and attributes like required and placeholder. In my for I used </dadtalist></p>
+    </section>
+
+    </main>
+    <footer>
+        &copy; 2026 Marie Fungavaka
+    </footer>
+</body>
+</html>
