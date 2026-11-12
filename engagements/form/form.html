@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header>
+    <h1>Marie's Web Design</h1>
+  </header>
+  <main>
+    <form action="formprocessing.html" method="post">
+      <fieldset>
+        <legend>Account</legend>
+        <div class="form-row">
+          <label for="personname">Full Name</label>
+          <input id="personname" type="text" name="fullname" placeholder="Full Name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" value="sladec@byuh.edu">
+        </div>
+        <div class="form-row">
+          <label for="bdate">Birthday</label>
+          <input type="date" name="bdate" id="bdate">
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input type="password" name="pass" id="password">
+        </div>
+        <div class="form-row">
+          <label for="state">State</label>
+          <select name="state" id="state">
+            <option value="blank">-------</option>
+            <option value="CA">California</option>
+            <option value="HI">Hawaii</option>
+            <option value="UT">Utah</option>
+          </select>
+        </div>
+        <div class="check-row">
+          <div class="spacer"></div>
+          <label><input type="checkbox" name="remember"> Remember Me?</label>
+        </div>
+        <div class="check-row">
+          <div class="spacer">Gender:</div>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+        <div class="form-row">
+          <label for="comments">Comments</label>
+          <textarea name="comments" id="comments"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="spacer"></div>
+          <input type="submit" value="Sign Up">
+        </div>
+      </fieldset>
+    </form>
+
+    <section class="questions">
+      <h2>Questions</h2>
+
+      <h3>1. What does the form's "action" attribute do?</h3>
+      <p>It sets where the form data is sent when you submit (a URL or script). If left out, it sends to the same page.</p>
+
+      <h3>2. What does the form's "method" attribute do?</h3>
+      <p>It sets how the data is sent, either GET or POST.</p>
+
+      <h3>3. What is the difference between POST and GET?</h3>
+      <p>GET puts the data in the URL, so it's visible and good for searches. POST hides the data in the request body, so it's better for passwords and sensitive info.</p>
+
+      <h3>4. How do you pre-fill a control, and how is that different from a placeholder?</h3>
+      <p>You pre-fill with the value attribute. That text is really in the field and gets submitted (like my email field). A placeholder is a light gray hint that disappears when you type and is never submitted (like my Full Name field).</p>
+
+      <h3>5. Which form controls did HTML5 add, and which did you use?</h3>
+      <p>HTML5 added input types like email, url, tel, number, range, date, time, color, and search, plus datalist and attributes like required and placeholder. In my form, I used the email and date input types and the placeholder attribute.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Marie Fungavaka</p>
+  </footer>
+</body>
+</html>
