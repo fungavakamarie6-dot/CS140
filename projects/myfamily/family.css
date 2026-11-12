@@ -1,0 +1,144 @@
+:root {
+  --red: #b3262e;
+  --red-dark: #7f171d;
+  --sand: #f6efe6;
+  --ink: #2a2420;
+  --muted: #6b605a;
+  --line: #dccfc0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--sand);
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* ---------- Header ---------- */
+header {
+  background: var(--red);
+  color: #fff;
+  padding: 28px 20px;
+  text-align: center;
+}
+header h1 { margin: 0; font-size: 2.2rem; letter-spacing: 0.5px; }
+header p { margin: 4px 0 0; font-style: italic; opacity: 0.9; }
+
+/* ---------- Nav (flex, evenly spaced) ---------- */
+nav { background: var(--red-dark); }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  display: block;
+  padding: 14px 12px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+nav a:hover, nav a:focus-visible { background: rgba(255, 255, 255, 0.15); outline: none; }
+
+/* ---------- Page layout: sidebar + main in one row ---------- */
+.layout {
+  display: flex;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+main {
+  flex: 1 1 70%;          /* ~75% of the row */
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;        /* cards wrap if all 3 don't fit */
+  gap: 20px;
+  align-items: flex-start;
+}
+
+aside {
+  order: -1;              /* sidebar on the left on wide screens */
+  flex: 0 0 25%;          /* 20-30% width */
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+/* ---------- Articles ---------- */
+article {
+  flex: 1 1 200px;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 16px;
+}
+article h2 { margin: 12px 0 8px; font-size: 1.25rem; line-height: 1.25; color: var(--red-dark); }
+article p { margin: 0; font-size: 0.98rem; }
+
+figure { margin: 0; }
+figure img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--line);
+  border-radius: 4px;
+}
+figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* ---------- Sidebar content ---------- */
+aside h2 { margin: 16px 0 8px; font-size: 1.15rem; color: var(--red-dark); }
+aside ul { margin: 0; padding-left: 20px; font-size: 0.95rem; }
+aside li { margin-bottom: 6px; }
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--ink);
+  color: #eadfd2;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Tablet: keep the layout, tighten it ---------- */
+@media (max-width: 900px) {
+  aside { flex-basis: 28%; }
+  header h1 { font-size: 1.9rem; }
+}
+
+/* ---------- Mobile (600px and below) ---------- */
+@media (max-width: 600px) {
+  nav ul { flex-direction: column; }
+  nav a { border-top: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+
+  .layout { flex-direction: column; padding: 16px 14px; }
+  main { flex-direction: column; flex: none; width: 100%; }
+  article { flex: none; width: 100%; }
+
+  aside { order: 0; flex: none; width: 100%; }  /* sidebar drops below the stories */
+}
+
+/* ---------- Print: remove the navigation ---------- */
+@media print {
+  nav { display: none; }
+  body { background: #fff; }
+  header { background: none; color: #000; }
+  .layout { display: block; }
+  article, aside { border: 1px solid #999; margin-bottom: 16px; break-inside: avoid; }
+}

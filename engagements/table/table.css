@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tablediv {
+    overflow-x: auto;
+}
+
+#schedule {
+    border: 5px solid #60086b;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#schedule tbody th, schedule thead th {
+    /*border: 5px solid #000;*/
+    background-color: purple;
+    color: white;
+}
+
+#schedule tbody tr:nth-child(even) {
+    background-color: rgb(161, 209, 251)
+}
