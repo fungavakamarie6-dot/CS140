@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
         <h1>Marie's Web Design</h1>
     </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
     <main>
-        <form action="formprocessing.html" method="get">
+        <form action="formprocessing.html" method="post">
+            <fieldset>
+                <legend>Account</legend>
             <div class="form-row">
+                <label for="personname">Full Name</label>
             <input id="personname" type="text" name="fullname" placeholder="Full Name">
             </div>
              <div class="form-row">
+                <label for="email">Email</label>
              <input id="email" type="text" name="email" placeholder="Email">
              </div>
+             <div>
+                <div class="form-row">
+                    <label for="bdate">Birthday</label>
+                    <input id="bdate" type="birthday" name="birthday" placeholder="Birthday">
+                </div>
+             </div>
               <div class="form-row">
+                <label for="password">Password</label>
              <input id="password" type="password" name="pass" placeholder="Password">
              </div>
               <div class="form-row">
@@ -34,7 +50,15 @@
                     <option value="Tonga">Tonga</option>
                 </select>
              </div>
-
+             <div class="spacer"></div>
+             <label>Gender</label>
+             <input type="radio" name="gender"
+             id="female" value="female">
+             <label for="female">Female</label>
+             <input type="radio" name="gender"
+             id="male" value="male">
+             <label for="male">Male</label>
+</fieldset>
         </form>
 
          <section>
