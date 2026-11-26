@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media Engagement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Audio, Video, Transform &amp; Transition</h1>
+
+  <h2>Audio</h2>
+  <audio controls loop>
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser doesn't support the audio element.
+  </audio>
+
+  <h2>Video</h2>
+  <video controls muted autoplay loop width="480">
+    <source src="movie.mp4" type="video/mp4">
+    Your browser doesn't support the video element.
+  </video>
+
+  <h2>YouTube Video</h2>
+  <iframe width="480" height="270" src="https://www.youtube.com/embed/VIDEO_ID"
+    title="YouTube video player" allowfullscreen></iframe>
+
+  <h2>Transform</h2>
+  <p>This photo shifts with transform, and the box next to it stays right where it is.</p>
+  <div class="row">
+    <img class="moved" src="photo.jpg" alt="Photo moved using CSS transform">
+    <div class="neighbor">Neighbor box — still in place</div>
+  </div>
+
+  <h2>Transition</h2>
+  <p>Hover over the button:</p>
+  <button class="grow-btn">Hover me</button>
+
+  <p>Hover over this box (transition is on the main rule, so it eases in and out):</p>
+  <div class="box-both">Hover me too</div>
+
+  <p>Hover over this box (transition is only on :hover, so it animates in and snaps back):</p>
+  <div class="box-hover-only">Hover me three</div>
+
+  <h2>Questions</h2>
+
+  <h3>1. What are the positives and negatives of hosting your videos on YouTube?</h3>
+  <p>
+    On the plus side, it's free, keeps my own site files smaller and faster to load, and works on
+    pretty much any device. The downsides are less control over the player (like ads or related videos
+    popping up), the risk of the video getting deleted or set to private, and needing an internet
+    connection to play it.
+  </p>
+
+  <h3>2. What is the most useful thing you can do with a transform?</h3>
+  <p>
+    Moving, scaling, or rotating something without shifting the layout around it. For example, making
+    a card slightly bigger on hover without knocking nearby items out of alignment.
+  </p>
+
+  <h3>3. What is the difference between a transform and a transition?</h3>
+  <p>
+    A transform changes the shape, position, or angle of an element (like moving or scaling it), while
+    a transition controls how smoothly that change happens over time instead of jumping all at once.
+  </p>
+
+  <footer>
+    <p>&copy; 2026 Marie Fungavaka</p>
+  </footer>
+</body>
+</html>
